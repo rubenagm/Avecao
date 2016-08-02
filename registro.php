@@ -51,8 +51,48 @@ $txt = '
             <td>' . $_POST['celular'] . '</td>
         </tr>
         <tr>
-            <td>Correo electrónico</td>
+            <td>Correo electr&oacute;nico</td>
             <td>' . $_POST['correo'] . '</td>
+        </tr>
+        <tr>
+            <td>Nombre empresa</td>
+            <td>' . $_POST['nombreEmpresa'] . '</td>
+        </tr>
+        <tr>
+            <td>Raz&oacute;n social</td>
+            <td>' . $_POST['razonSocial'] . '</td>
+        </tr>
+        <tr>
+            <td>RFC/s</td>
+            <td>' . $_POST['rfc'] . '</td>
+        </tr>
+        <tr>
+            <td>Calle</td>
+            <td>' . $_POST['calle'] . '</td>
+        </tr>
+        <tr>
+            <td>N&uacute;mero Exterior</td>
+            <td>' . $_POST['numeroExterior'] . '</td>
+        </tr>
+        <tr>
+            <td>N&uacute;mero Interior</td>
+            <td>' . $_POST['numeroInterior'] . '</td>
+        </tr>
+        <tr>
+            <td>C&oacute;digo postal</td>
+            <td>' . $_POST['codigoPostal'] . '</td>
+        </tr>
+        <tr>
+            <td>Colonia</td>
+            <td>' . $_POST['colonia'] . '</td>
+        </tr>
+        <tr>
+            <td>Municipio</td>
+            <td>' . $_POST['municipio'] . '</td>
+        </tr>
+        <tr>
+            <td>Estado</td>
+            <td>' . $_POST['estado'] . '</td>
         </tr>
     </table>';
 
