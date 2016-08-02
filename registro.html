@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script src="js/materialize.min.js"></script>
+</head>
+<body>
+    <footer class="page-footer white">
+        <div class="container">
+            <div class="divider"></div>
+            <div class="row">
+                <div class="s2 m2 l2"></div>
+                <div class="s8 m8 l8">
+                    <img src="src/avecao_magno_evento.jpg" style="display: block; height: 200px; margin-left: auto; margin-right: auto;">
+                </div>
+                <div class="s2 m2 l2"></div>
+
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col l12 s12 m12">
+                    <h4 class="black-text">Reg&iacute;strate</h4>
+                    <p class="black-text">Llena los datos con *, son obligatorios para que podamos tener la información para contactarnos contigo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <div class="row">
+                <div class="input-field col s12 m12 l4">
+                    <input id="nombre" type="text" class="validate">
+                    <label for="nombre">* Nombre/s</label>
+                </div>
+                <div class="input-field col s12 m12 l4">
+                    <input id="apellido_paterno" type="text" class="validate">
+                    <label for="apellido_paterno">* Apellido paterno</label>
+                </div>
+                <div class="input-field col s12 m12 l4">
+                    <input id="apellido_materno" type="text" class="validate">
+                    <label for="apellido_materno">* Apellido materno</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m12 l4">
+                    <input id="correo" type="email" class="validate">
+                    <label for="correo" data-error="EL correo es incorrecto" data-success="Correcto">* Correo electr&oacute;nico</label>
+                </div>
+                <div class="input-field col s12 m12 l4">
+                    <input id="telefono" type="tel" class="validate">
+                    <label for="telefono" data-error="El tel&eacute;fono es incorrecto" data-success="Correcto">* Tel&eacute;fono fijo</label>
+                </div>
+                <div class="input-field col s12 m12 l4">
+                    <input id="celular" type="tel" class="validate">
+                    <label for="celular" data-error="El tel&eacute;fono es incorrecto" data-success="Correcto">* Tel&eacute;fono celular</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m12 l8">
+                    <input id="nombreEmpresa" type="text" class="validate">
+                    <label for="nombreEmpresa">Nombre de la empresa</label>
+                </div>
+                <label class="col s2 m2 l2">Introducir datos de facturaci&oacute;n</label>
+                <div class="switch col s2 m2 l2">
+                    <label>
+                        No
+                        <input type="checkbox" class="white" id="check_datos_facturacion">
+                        <span class="lever blue"></span>
+                        S&iacute;
+                    </label>
+                </div>
+            </div>
+            <div id="datos_facturacion">
+                <div class="divider"></div>
+                <label>Datos de facturación</label>
+                <div class="row">
+                    <div class="input-field col s12 m12 l8">
+                        <input id="razonSocial" type="text" class="validate">
+                        <label for="razonSocial">Razón social</label>
+                    </div>
+                    <div class="input-field col s12 m12 l4">
+                        <input id="rfc" type="text" class="validate">
+                        <label for="rfc">RFC</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m12 l4">
+                        <input id="calle" type="text" class="validate">
+                        <label for="calle">Calle</label>
+                    </div>
+                    <div class="input-field col s6 m6 l2">
+                        <input id="numeroExterior" type="text" class="validate">
+                        <label for="numeroExterior">N. exterior</label>
+                    </div>
+                    <div class="input-field col s6 m6 l2">
+                        <input id="numeroInterior" type="text" class="validate">
+                        <label for="numeroInterior">N. interior</label>
+                    </div>
+                    <div class="input-field col s12 m12 l4">
+                        <input id="colonia" type="text" class="validate">
+                        <label for="colonia">Colonia</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m12 l4">
+                        <input id="codigoPostal" type="number" class="validate">
+                        <label for="codigoPostal">C&oacute;digo postal</label>
+                    </div>
+                    <div class="input-field col s12 m12 l4">
+                        <input id="municipio" type="text" class="validate">
+                        <label for="municipio">Municipio</label>
+                    </div>
+                    <div class="input-field col s12 m12 l4">
+                        <input id="estado" type="text" class="validate">
+                        <label for="estado">Estado</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+            <br>
+            <div class="row">
+                <a class="waves-effect blue darken-4 btn" onclick="registrar()">Registrarme</a>
+            </div>
+    </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content blue darken-4">
+                <h4 class="white-text">Tu registro se ha completado!</h4>
+                <div class="divider white"></div>
+                <p class="white-text">Muchas gracias por realizar este pre-registro, en caso de ser necesario nos pondremos en contacto contigo.<br>AVECAO</p>
+            </div>
+            <div class="modal-footer blue darken-4">
+                <a href="#!" class=" modal-action modal-close waves-effect white-text btn-flat">De acuerdo</a>
+            </div>
+        </div>
+        <script src="js/registro.js"></script>
+</body>
+</html>
