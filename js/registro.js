@@ -71,10 +71,10 @@ function registrar() {
         mensaje += "- Debes introducir apellido materno\n";
     }
 
-    if (parametros.telefono.length < 8) {
+    /*if (parametros.telefono.length < 8) {
         bandera = true;
         mensaje += "- Debes introducir un teléfono\n";
-    }
+    }*/
 
     if (parametros.celular.length < 10) {
         bandera = true;
@@ -112,7 +112,7 @@ function registrar() {
             bandera = true;
         }
 
-        if (parametros.numeroExterior.length < 3) {
+        if (parametros.numeroExterior.length < 1) {
             bandera = true;
         }
 

@@ -11,10 +11,9 @@
  */
 
 $correos = array(
-    "ruben.agm02@gmail.com",
-    "r.guardado@outlook.es"
+    "avecao.ac@gmail.com",
+    "laura.pajaritolopez@gmail.com"
 );
-
 
 /*
  * Aquí se forma el título del mensaje
